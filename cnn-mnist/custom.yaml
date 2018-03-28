@@ -1,0 +1,6 @@
+trainingInput:
+  masterType: standard
+  workerType: standard
+  workerCount: 8
+  parameterServerType: standard
+  parameterServerCount: 3
