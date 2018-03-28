@@ -10,13 +10,13 @@ python cnn_mnist.py
 ```
 ```
 PROJECT=$(gcloud config list project --format "value(core.project)")
-BUCKET=${PROJECT}-ml
+BUCKET=gs://${PROJECT}-ml
 DATA_DIR=$BUCKET/data
 REGION=us-central1
 JOB=mnist1
 cd cnn-mnist
 python scripts/create_records.py
-gsutil mb -l $REGION gs://$BUCKET
+gsutil mb -l $REGION $BUCKET
 gsutil cp /tmp/data/train.tfrecords $DATA_DIR
 gsutil cp /tmp/data/test.tfrecords $DATA_DIR
 ```
