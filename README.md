@@ -15,7 +15,7 @@ DATA_DIR=$BUCKET/data
 REGION=us-central1
 JOB=mnist1
 cd cnn-mnist
-./scripts/create_records.py
+python scripts/create_records.py
 gsutil mb -l $REGION gs://$BUCKET
 gsutil cp /tmp/data/train.tfrecords $DATA_DIR
 gsutil cp /tmp/data/test.tfrecords $DATA_DIR
