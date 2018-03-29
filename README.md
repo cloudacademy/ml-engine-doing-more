@@ -11,7 +11,7 @@ python cnn_mnist.py
 ```
 PROJECT=$(gcloud config list project --format "value(core.project)")
 BUCKET=gs://${PROJECT}-ml
-DATA_DIR=$BUCKET/data
+DATA_DIR=$BUCKET/data/
 REGION=us-central1
 JOB=mnist1
 cd cnn-mnist
