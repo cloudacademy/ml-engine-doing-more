@@ -109,7 +109,7 @@ def _cnn_model_fn(features, labels, mode):
         mode, predictions=predictions, export_outputs=export_outputs)
 
   if mode == Modes.TRAIN:
-    optimizer = tf.train.AdamOptimizer(learning_rate=0.001)
+    optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.001)
     train_op = optimizer.minimize(loss, global_step=global_step)
     return tf.estimator.EstimatorSpec(mode, loss=loss, train_op=train_op)
 
