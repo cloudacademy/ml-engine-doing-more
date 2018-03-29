@@ -13,7 +13,7 @@ PROJECT=$(gcloud config list project --format "value(core.project)")
 BUCKET=gs://${PROJECT}-ml
 DATA_DIR=$BUCKET/data/
 REGION=us-central1
-JOB=mnist
+JOB=mnist-dist1
 cd cnn-mnist
 python scripts/create_records.py
 gsutil mb -l $REGION $BUCKET
