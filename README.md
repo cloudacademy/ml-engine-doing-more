@@ -46,7 +46,8 @@ python cnn_mnist.py
 
 ### Scale Options
 ```
-JOB=mnist_custom
+cd cnn-mnist
+JOB=mnist_custom1
 ```
 ```
 gcloud ml-engine jobs submit training $JOB \
