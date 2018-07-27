@@ -1,4 +1,4 @@
-# ml-engine-doing-more
+# Doing More with Google Cloud Machine Learning Engine
 This file contains text you can copy and paste for the examples in Cloud Academy's _Doing More with Google Cloud Machine Learning Engine_ course.  
 
 ### Introduction
